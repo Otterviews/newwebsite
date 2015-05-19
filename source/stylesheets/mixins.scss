@@ -1,0 +1,13 @@
+@import 'variables';
+
+@mixin large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$large - 1}) {
+    @content;
+  }
+}
